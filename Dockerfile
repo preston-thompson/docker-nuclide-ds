@@ -44,3 +44,6 @@ WORKDIR /nuclide
 RUN git clone https://github.com/veravisions/nuclide /nuclide
 
 RUN ./build_engine.sh
+
+RUN rm -rf src/
+RUN rm -rf .git/
